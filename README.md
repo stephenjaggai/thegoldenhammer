@@ -1,1 +1,3 @@
-# thegoldenhammer
+# The Golden Hammer
+
+The Golden Hammer is a handyman service website in which customers can visit to find handymen categorized by location and services. The essential pages of the handyman website are the home page, about page, privacy policy page and blog page. Other important pages include the services page which lists and describes the services that the handymen offer and the locations page which lists the work locations of each handymen. Core information that will be included in each handyman page are contact information of the handymen, the services they provide and where they provide those services. The blog page consists of how-to guides relating to the services provided by the handymen.
