@@ -1,5 +1,6 @@
 <?php 
 function handyman_post_types(){
+        // custom post type: Locations
         register_post_type('location',array(
             'capability_type' => 'location',
             'map_meta_cap'=> true,
@@ -16,6 +17,7 @@ function handyman_post_types(){
             ),
             'menu_icon' => 'dashicons-location'
         ));
+        // custom post type: Services
         register_post_type('service',array(
             'capability_type' => 'service',
             'map_meta_cap'=> true,
@@ -32,6 +34,7 @@ function handyman_post_types(){
             ),
             'menu_icon' => 'dashicons-hammer'
         ));
+        // custom post type: Handymen
         register_post_type('handyman',array(
             'capability_type' => 'handyman',
             'map_meta_cap'=> true,

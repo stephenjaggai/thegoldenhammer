@@ -46,6 +46,7 @@ $wrap_class     = apply_filters( 'hestia_filter_single_post_content_classes', 'c
 
 				echo '</div>';
 
+				//displaying related handymen for each service
 				$relatedHandymen = new WP_Query(array(
 					'posts_per_page' => -1,
 					'post_type' => 'handyman',

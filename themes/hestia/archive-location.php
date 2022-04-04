@@ -52,6 +52,7 @@ do_action( 'hestia_before_archive_content' );
 						the_posts_pagination();
 						do_action( 'hestia_after_pagination' );
 					else :
+							//getting template from content-location
 							get_template_part( 'template-parts/content', 'none' );
 					endif;
 					?>

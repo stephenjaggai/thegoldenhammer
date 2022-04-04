@@ -18,6 +18,7 @@ do_action( 'hestia_before_single_post_wrapper' );
 			if ( have_posts() ) :
 				while ( have_posts() ) :
 					the_post();
+					//getting template from content-service
 					get_template_part( 'template-parts/content', 'service' );
 				endwhile;
 				else :

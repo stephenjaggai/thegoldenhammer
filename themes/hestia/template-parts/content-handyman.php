@@ -45,7 +45,8 @@ $wrap_class     = apply_filters( 'hestia_filter_single_post_content_classes', 'c
 				);
 
 				echo '</div>';
-
+				
+				// displaying related services for each handyman
 				$relatedServices = new WP_Query(array(
 					'posts_per_page' => -1,
 					'post_type' => 'service',
@@ -77,7 +78,8 @@ $wrap_class     = apply_filters( 'hestia_filter_single_post_content_classes', 'c
 					}
 					echo '</ul>';
 					}wp_reset_postdata( );
-
+					
+					//displaying related locations for each handyman
 					$relatedLocations = new WP_Query(array(
 						'posts_per_page' => -1,
 						'post_type' => 'location',

@@ -186,6 +186,7 @@ function hestia_setup_theme() {
 	return;
 }
 
+//sorting the services and locations 
 function handyman_adjust_queries($query){
 	if(!is_admin() AND is_post_type_archive('service') AND $query->is_main_query()){
 		$query->set('orderby', 'title');
@@ -219,7 +220,7 @@ function  handyman_features(){
 // type of instruction for WordPress to run, function name to run
 add_action('hestia_setup_theme', 'handyman_features');
 
-//Redirect subscriber accounts out of admin and onto homepage
+//Redirect customer accounts out of admin and onto homepage
 add_action('admin_init', 'redirectSubsToFrontend');
 
 function redirectSubsToFrontend(){
@@ -232,7 +233,7 @@ function redirectSubsToFrontend(){
 	}
 }
 
-//Hide admin bar from subscribers
+//Hide admin bar from customers
 add_action('wp_loaded', 'noSubsAdminBar');
 	function noSubsAdminBar(){
 		$ourCurrentUser = wp_get_current_user();
